@@ -101,3 +101,20 @@
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.info-box {
+  background-image: url(../assets/img01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+* {
+  text-decoration: none;
+}
+.display-1 {
+  font-weight: 700;
+}
+.btn btn-primary {
+  border: 2px solid #fff;
+}
+</style>

@@ -55,4 +55,10 @@
 * {
   text-decoration: none;
 }
+.display-1 {
+  font-weight: 700;
+}
+.btn btn-primary {
+  border: 2px solid #fff;
+}
 </style>
