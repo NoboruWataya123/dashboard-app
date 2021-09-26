@@ -1,0 +1,65 @@
+/*  ---------------------------------------------------------
+	2. icomoon fonts styles
+	---------------------------------------------------------*/
+@font-face { @include fontface (icomoon, icomoon); }
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-pdf:before { content: "\e900"; }
+.icon-activity:before { content: "\e901"; }
+.icon-server:before { content: "\e902"; }
+.icon-microsoftexcel:before { content: "\e903"; }
+.icon-camera:before { content: "\e904"; }
+.icon-arrow-right:before { content: "\e905"; }
+.icon-search:before { content: "\e906"; }
+.icon-paid:before { content: "\e907"; }
+.icon-link:before { content: "\e908"; }
+.icon-cross:before { content: "\e909"; }
+.icon-wallet:before { content: "\e90a"; }
+.icon-settings:before { content: "\e90b"; }
+.icon-file-text-o:before { content: "\e90c"; }
+.icon-group:before { content: "\e90d"; }
+.icon-sign-out:before { content: "\e90e"; }
+.icon-bank:before { content: "\e90f"; }
+.icon-lock:before { content: "\e910"; }
+.icon-user-circle-o:before { content: "\e911"; }
+.icon-exclamation-circle:before { content: "\e912"; }
+.icon-check-circle:before { content: "\e913"; }
+.icon-filter:before { content: "\e914"; }
+.icon-chevron-right:before { content: "\e915"; }
+.icon-chevron-left:before { content: "\e916"; }
+.icon-chevron-down:before { content: "\e917"; }
+.icon-chevron-up:before { content: "\e918"; }
+.icon-calendar:before { content: "\e919"; }
+.icon-check:before { content: "\e91a"; }
+.icon-photos:before { content: "\e91b"; }
+.icon-clock:before { content: "\e91c"; }
+.icon-goods:before { content: "\e91d"; }
+.icon-dash:before { content: "\e91e"; }
+.icon-payment-link-add:before { content: "\e91f"; }
+.icon-tips:before { content: "\e920"; }
+.icon-services:before { content: "\e921"; }
+.icon-history:before { content: "\e922"; }
+.icon-withdraw:before { content: "\e923"; }
+.icon-calendar2:before { content: "\e924"; }
+.icon-credit-card:before { content: "\e925"; }
+.icon-plus-circle:before { content: "\e926"; }
+.icon-dots:before { content: "\e927"; }
+.icon-linkhistory:before { content: "\e928"; }
+.icon-external-link:before { content: "\e929"; }
+.icon-trash:before { content: "\e92a"; }
+.icon-check-circle-o:before { content: "\e92b"; }
+.icon-cross-circle:before { content: "\e92c"; }
+.icon-baht:before { content: "\e931";}
+.icon-user:before { content: "\e92d"; }
+.icon-eye:before { content: "\e92e";}
+.icon-edit:before { content: "\e92f";}
+.icon-repeat:before { content: "\e930";}

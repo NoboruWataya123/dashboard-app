@@ -1,0 +1,8 @@
+
+/*  ---------------------------------------------------------
+	1. Embedded fonts styles
+	---------------------------------------------------------*/
+@font-face { @include fontface(circular, circular_book-webfont); }
+@font-face { @include fontface(circular, circular_medium-webfont, 500); }
+@font-face { @include fontface(circular, circular_bold-webfont, 700); }
+@font-face { @include fontface(circular, circular_black-webfont, 900); }
