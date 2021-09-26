@@ -1,6 +1,5 @@
 <template>
   <component :is="layout" />
-  <p>{{ $t("message.hello", { msg: "hello" }) }}</p>
 </template>
 
 <script>
