@@ -7,15 +7,15 @@
       <div class="card withdraw-steps">
         <div class="card-body">
           <ul class="step-nav-list">
-            <li class="active">
+            <li :class="{ active: stepActive }">
               <strong>{{ $t("Withdraw Funds") }}</strong>
             </li>
-            <li>
+            <li :class="{ active: nextStepActive }">
               <strong>{{ $t("Confirm") }}</strong>
             </li>
           </ul>
           <div class="steps">
-            <div class="step active">
+            <div class="step" :class="{ active: isActive }">
               <div class="step-body">
                 <div class="info-box">
                   <div class="price-info">
@@ -64,14 +64,18 @@
               <div class="step-footer">
                 <ul class="buttons-inline-list">
                   <li>
-                    <button type="button" class="btn btn-primary btn-next">
+                    <button
+                      @click="onClickNext"
+                      type="button"
+                      class="btn btn-primary btn-next"
+                    >
                       {{ $t("Next") }} <i class="icon-arrow-right"></i>
                     </button>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="step">
+            <div class="step" :class="{ active: nextActive }">
               <div class="step-body">
                 <ul class="detail-list">
                   <li>
@@ -128,6 +132,27 @@
     </section>
   </main>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isActive: true,
+      nextActive: false,
+      stepActive: true,
+      nextStepActive: false,
+    };
+  },
+  methods: {
+    onClickNext() {
+      this.isActive = false;
+      this.nextActive = true;
+      this.stepActive = false;
+      this.nextStepActive = true;
+    },
+  },
+};
+</script>
 
 <i18n>
 {
