@@ -548,12 +548,20 @@ export default defineComponent({
       isActive: false,
     };
   },
+  methods: {
+    handleToggle() {
+      this.isActive = !this.isActive;
+    },
+  },
 });
 </script>
 
 <style lang="scss" scoped>
 button {
   width: fit-content;
+}
+*{
+  text-decoration: none;
 }
 </style>
 
