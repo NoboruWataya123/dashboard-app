@@ -132,6 +132,12 @@
   </main>
 </template>
 
+<style lang="scss" scoped>
+#main {
+  background-color: #f5f9ff !important;
+}
+</style>
+
 <i18n>
 {
   "en": {

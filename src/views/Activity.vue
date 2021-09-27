@@ -560,8 +560,11 @@ export default defineComponent({
 button {
   width: fit-content;
 }
-*{
+* {
   text-decoration: none;
+}
+#main {
+  background-color: #f5f9ff !important;
 }
 </style>
 

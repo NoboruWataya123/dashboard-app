@@ -364,4 +364,13 @@ export default {
 .card-popup-opener {
   cursor: pointer;
 }
+#main {
+  background-color: #f5f9ff !important;
+}
+.table-holder {
+  font-family: circular sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+}
 </style>

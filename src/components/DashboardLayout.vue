@@ -10,17 +10,7 @@
       </div>
       <a href="#" @click="handleToggle" class="nav-opener"><span></span></a>
       <div class="nav-holder">
-        <ul class="buttons-nav d-none d-lg-flex">
-          <li>
-            <a href="#" class="btn btn-primary">{{ $t("Demo") }}</a>
-          </li>
-          <li>
-            <a href="#" class="btn btn-outline-dark">{{ $t("Sandbox") }}</a>
-          </li>
-          <li>
-            <a href="#" class="btn btn-outline-dark">{{ $t("Live") }}</a>
-          </li>
-        </ul>
+        <navbuttons :="active" v-if="active" />
         <ul class="top-nav">
           <li class="d-none d-md-block">
             <a href="#" class="btn btn-outline-primary"
@@ -181,16 +171,33 @@
 
 <script>
 import ChangeLocale from "./ChangeLocale.vue";
+import Navbuttons from "./Navbuttons.vue";
 export default {
-  components: { ChangeLocale },
+  components: { ChangeLocale, Navbuttons },
   data() {
     return {
       isActive: false,
+      active: false,
     };
   },
   methods: {
     handleToggle() {
       this.isActive = !this.isActive;
+    },
+    showComponent() {
+      if (this.$route.path === "/") {
+        this.active = true;
+      } else {
+        this.active = false;
+      }
+    },
+  },
+  mounted() {
+    this.showComponent();
+  },
+  watch: {
+    $route() {
+      this.showComponent();
     },
   },
 };
